@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proje Detayı - Söğüt İnşaat</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <img src="sogut_logo.jpg" alt="Söğüt İnşaat" style="height: 100px; width: auto;">
+      </a>
+      <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
+        <li><a href="index.html?page=about" class="nav-link">Hakkımızda</a></li>
+        <li><a href="index.html?page=projects" class="nav-link active">Projelerimiz</a></li>
+        <li><a href="index.html?page=contact" class="nav-link">İletişim</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- Mobil Menü Overlay ve Panel -->
+  <div class="mobile-menu-overlay"></div>
+  <nav class="mobile-menu-panel">
+    <button class="mobile-menu-close"><i class="fas fa-times"></i></button>
+    <ul>
+      <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
+      <li><a href="index.html?page=about" class="nav-link">Hakkımızda</a></li>
+      <li><a href="index.html?page=projects" class="nav-link active">Projelerimiz</a></li>
+      <li><a href="index.html?page=contact" class="nav-link">İletişim</a></li>
+    </ul>
+  </nav>
+  <!-- Main İçerik -->
+  <main>
+    <div class="page active fade-in" id="project-detail">
+      <!-- Banner Section -->
+      <section class="project-banner" style="background: linear-gradient(rgba(6, 30, 71, 0.85), rgba(6, 30, 71, 0.85)), url('/api/placeholder/1200/400') center/cover no-repeat; padding:120px 0; text-align:center; color:white;">
+        <div class="container">
+          <h1 id="project-title">Proje Detayı</h1>
+        </div>
+      </section>
+      
+      <!-- Proje Detay İçeriği -->
+      <section class="project-content">
+        <div class="container">
+          <div class="project-detail-grid">
+            <div class="project-detail-images">
+              <!-- Galeri Konteyner -->
+              <div class="gallery-container">
+                <img src="projeler/first-projects/first-project-main-image.jpg" alt="Proje Görseli" class="gallery-image active">
+                <img src="projeler/first-projects/first-project-image-one.jpg" alt="Galeri 1" class="gallery-image">
+                <img src="projeler/first-projects/first-project-image-two.jpg" alt="Galeri 2" class="gallery-image">
+                <img src="projeler/first-projects/first-project-image-three.jpg" alt="Galeri 3" class="gallery-image">
+                <img src="projeler/first-projects/first-project-image-four.jpg" alt="Galeri 4" class="gallery-image">
+                <button class="gallery-nav prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="gallery-nav next-btn"><i class="fas fa-chevron-right"></i></button>
+                <div class="gallery-counter">1 / 5</div>
+              </div>
+              
+              <!-- Küçük Resimler -->
+              <div class="project-gallery">
+                <div class="gallery-item active" data-index="0">
+                  <img src="projeler/first-projects/first-project-main-image.jpg" alt="Galeri 0">
+                </div>
+                <div class="gallery-item" data-index="1">
+                  <img src="projeler/first-projects/first-project-image-one.jpg" alt="Galeri 1">
+                </div>
+                <div class="gallery-item" data-index="2">
+                  <img src="projeler/first-projects/first-project-image-two.jpg" alt="Galeri 2">
+                </div>
+                <div class="gallery-item" data-index="3">
+                  <img src="projeler/first-projects/first-project-image-three.jpg" alt="Galeri 3">
+                </div>
+                <div class="gallery-item" data-index="4">
+                  <img src="projeler/first-projects/first-project-image-four.jpg" alt="Galeri 4">
+                </div>
+              </div>
+            </div>
+            <div class="project-detail-content">
+              <h2>Proje Hakkında</h2>
+              <p id="project-description">Proje açıklaması buraya gelecek.</p>
+              
+              <div class="project-specs">
+                <h3>Proje Özellikleri</h3>
+                <ul id="project-specs-list">
+                  <li><strong>Konum:</strong> <span id="project-location">İstanbul</span></li>
+                  <li><strong>Alan:</strong> <span id="project-area">10.000 m²</span></li>
+                  <li><strong>Tamamlanma Tarihi:</strong> <span id="project-completion">2024</span></li>
+                  <li><strong>Durum:</strong> <span id="project-status">Tamamlandı</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="project-features">
+            <h3>Proje Özellikleri</h3>
+            <div class="features-grid" id="project-features">
+              <!-- Features will be added dynamically -->
+            </div>
+          </div>
+          
+          <div class="project-navigation">
+            <a href="index.html?page=projects" class="btn btn-secondary"><i class="fas fa-arrow-left"></i> Tüm Projelere Dön</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <div class="lightbox-content">
+      <button class="lightbox-close"><i class="fas fa-times"></i></button>
+      <button class="lightbox-nav lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+      <img src="" alt="" class="lightbox-image">
+      <button class="lightbox-nav lightbox-next"><i class="fas fa-chevron-right"></i></button>
+      <div class="lightbox-counter">1 / 5</div>
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3>Hakkımızda</h3>
+        <p>1995 yılından bu yana kaliteli ve güvenilir inşaat hizmeti sunmaktayız.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Hızlı Linkler</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="index.html?page=about">Hakkımızda</a></li>
+          <li><a href="index.html?page=projects">Projelerimiz</a></li>
+          <li><a href="index.html?page=contact">İletişim</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>İletişim</h3>
+        <ul class="footer-links">
+          <li>Örnek Mah. İnşaat Sok. No:10</li>
+          <li>+90 212 000 00 00</li>
+          <li>info@sogutinsaat.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 Söğüt İnşaat. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+  <script src="project.js"></script>
+</body>
+</html>
