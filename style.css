@@ -977,15 +977,11 @@ footer:before {
 }
 
 /* Sadece mobilde göster */
-@media (max-width: 992px) {
+@media (min-width: 992px) {
   .mobile-menu-panel, .mobile-menu-overlay, .mobile-menu-btn { display: none !important; }
 }
 @media (max-width: 991px) {
   .nav-menu { display: none !important; }
   .mobile-menu-btn { display: block !important; }
 }
-@media only screen and (orientation: landscape) {
-  .ust-menu, .navbar, .header-menu { /* Menü sınıfınızın adını buraya yazın */
-    display: none !important;
-  }
-}
+
