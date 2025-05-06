@@ -242,7 +242,7 @@ header.scrolled {
   display: none;
   background: none;
   border: none;
-  font-size: 24px;
+  font-size: 28px;
   cursor: pointer;
   color: var(--primary);
 }
@@ -1060,7 +1060,7 @@ footer:before {
   .nav-menu { display: none !important; }
   .mobile-menu-btn { 
     display: block !important; 
-    margin-right: 15px;
+    margin-right: 25px;
   }
 }
 
