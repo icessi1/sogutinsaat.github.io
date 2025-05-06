@@ -324,6 +324,11 @@ header.scrolled {
   font-size: 3.5rem;
   color: var(--primary);
   margin-bottom: 25px;
+  transition: color 0.3s ease;
+}
+
+.feature-item:hover .feature-icon {
+  color: var(--accent);
 }
 
 /* Sayfa Bölümleri İçin Genel Grid Yapıları */
